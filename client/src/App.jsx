@@ -22,7 +22,7 @@ import Memory from './components/Games/Memory/Memory.jsx';
 import Card from './components/Card/Card.jsx';
 
 
-axios.defaults.baseURL = 'https://mindscoolbackend.onrender.com'; 
+axios.defaults.baseURL = 'https://mentalwellness-backend.onrender.com'; 
 axios.defaults.withCredentials = true; 
 
 const App = () => {
