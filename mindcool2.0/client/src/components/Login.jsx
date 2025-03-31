@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setUser, setLoading } from '../redux/userSlice.jsx';
 
 // Define or import API_END_POINT
-const API_END_POINT = 'http://localhost:8080/api/v1/user'; // Make sure to replace this with your actual API endpoint
+const API_END_POINT = 'https://mindscoolbackend.onrender.com/api/v1/user'; // Make sure to replace this with your actual API endpoint
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
