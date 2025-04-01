@@ -1,5 +1,4 @@
 import React from 'react'
-// import sateliteImg from '../../assets/foreigners.jpg'; 
 import Talk from '../../assets/talk.avif';
 
 
