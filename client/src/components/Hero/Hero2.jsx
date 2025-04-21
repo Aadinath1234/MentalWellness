@@ -45,9 +45,9 @@ const ContactPage = () => {
         <div className='mt-8 text-center'>
           <h2 className='text-2xl font-semibold mb-4'>Follow Us</h2>
           <div className='flex justify-center gap-4'>
-            <a href="https://facebook.com/" className='text-blue-600 hover:text-blue-800'>Facebook</a>
-            <a href="https://twitter.com/" className='text-blue-400 hover:text-blue-600'>Twitter</a>
-            <a href="https://linkedin.com/in/" className='text-blue-700 hover:text-blue-900'>LinkedIn</a>
+            <a href="#" className='text-blue-600 hover:text-blue-800'>Facebook</a>
+            <a href="#" className='text-blue-400 hover:text-blue-600'>Twitter</a>
+            <a href="#" className='text-blue-700 hover:text-blue-900'>LinkedIn</a>
           </div>
         </div>
       </div>
