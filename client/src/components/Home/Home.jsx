@@ -21,7 +21,7 @@ const Home = () => {
   });
   return (
     <div className="overflow-x-hidden">
-      <div className="h-[700px] relative">
+      <div className="h-[700px] relative overflow-x-hidden">
         <video
           autoPlay
           loop
