@@ -35,7 +35,7 @@ const ServiceData = [
       "Engaging in short, fun games offers a quick mental break and boosts creativity.",
     img: Games,
     aosDelay: "700",
-    link: "/Bubble",
+    link: "https://poki.com/",
   },
   {
     title: "Books and Thoughts",
