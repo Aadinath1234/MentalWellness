@@ -20,7 +20,7 @@ const Home = () => {
     });
   });
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <div className="h-[700px] relative">
         <video
           autoPlay
