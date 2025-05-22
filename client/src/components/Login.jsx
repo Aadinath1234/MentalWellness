@@ -20,7 +20,7 @@ const Login = () => {
   const isLoading = useSelector((store) => store.app.isLoading);
 
   const loginHandler = async () => {
-    // setIsLogin(true);
+    setIsLogin(true);
     console.log("Login Clicked !!");
   };
 
@@ -47,7 +47,7 @@ const Login = () => {
           localStorage.setItem("user", JSON.stringify(res.data.user));
           navigate("/HeroCard");
         } else {
-          setIsLogin(false);
+          setIsLogin(true);
         }
       } else {
         throw new Error("Unexpected response format");
