@@ -35,7 +35,7 @@ const ContactPage = () => {
           {/* Contact Information */}
           <div className='md:w-1/2 md:ml-8 mt-8 md:mt-0'>
             <h2 className='text-2xl font-semibold mb-4'>Contact Information</h2>
-            <p className='text-gray-700 mb-2'>Email: <a href="mailto:contact@yourdomain.com" className='text-blue-500 hover:underline'>optimus@gmail.com</a></p>
+            <p className='text-gray-700 mb-2'>Email: <a href="mailto:contact@yourdomain.com" className='text-blue-500 hover:underline'>wellness@gmail.com</a></p>
             <p className='text-gray-700 mb-2'>Phone: (123) 456-7890</p>
             <p className='text-gray-700 mb-2'>Address: 1234 Your Street, City, Country</p>
             <p className='text-gray-700 mb-2'>Business Hours: Mon-Fri, 9 AM - 5 PM</p>
