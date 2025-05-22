@@ -1,78 +1,80 @@
 import React from "react";
+import * as motion from "motion/react-client";
+
+const box = {
+  borderRadius: 5,
+};
 
 function Card() {
   return (
-    <div>
-      <div className="flex flex-row p-16 gap-16 justify-center items-center bg-blue-500 max-lg:flex-col">
-        {/*  card 1 */}
-        <div className="card bg-blue-500 text-white w-96 shadow-sm rounded-2xl max-lg:p-4">
-          <figure>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrfKip9vPjP0hFWsNOZXYUFfmVSAAaORrBg&s"
-              alt="Shoes"
-              className=" w-full rounded-2xl"
-            />
-          </figure>
-          <div className="card-body">
-            <p className="font-sans text-lg skeleton  bg-blue-500">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 bg-blue-500">
+      {/* Card 1 */}
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        style={box}
+      >
+        <div className="bg-black text-white  font-serif  rounded-xl shadow-lg overflow-hidden">
+          <img
+            
+            src="https://t3.ftcdn.net/jpg/13/37/34/90/240_F_1337349048_AQjGQU7UXMzD6jv3N8QTsRrOqbFdVZAZ.jpg"
+            alt="Mental Health"
+            className="w-full h-90 object-cover"
+          />
+
+          <div className="p-4 skeleton bg-black ">
+            <p>
               Mental health is a crucial aspect of our overall well-being,
-              influencing how we think, feel, and act. Being aware of mental
-              health means understanding the importance of emotional balance,
-              stress management, and self-care. Addressing mental health
-              proactively can improve our daily functioning and help us navigate
-              life's challenges with resilience. Open conversations about mental
-              health can also reduce stigma and encourage individuals to seek
-              the support they need
+              influencing how we think, feel, and act. Understanding emotional
+              balance, stress, and self-care helps build resilience.
             </p>
           </div>
         </div>
+      </motion.div>
 
-        {/*  card 2  */}
-        <div className="card bg-blue-500 text-white w-96 shadow-sm rounded-2xl max-lg:p-4">
-          <figure>
-            <img
-              src="data:image/jpeg;base64,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"
-              alt="Shoes"
-              className=" w-full rounded-2xl"
-            />
-          </figure>
-          <div className="card-body">
-            <p className="font-sans text-lg skeleton bg-blue-500">
-              Mental illness refers to conditions that affect a person's
-              thoughts, emotions, and behavior, often leading to significant
-              distress or impairment in daily life. Disorders such as
-              depression, anxiety, and schizophrenia can alter an individual's
-              ability to work, socialize, and perform everyday tasks. It's
-              important to remember that mental illness is not a sign of
-              weakness, and with the right treatment, many people with mental
-              health conditions can lead fulfilling lives.
-            </p>
-          </div>
-        </div>
+      {/* Card 2 */}
 
-        {/* card 3  */}
-        <div className="card bg-blue-500 text-white  w-96 shadow-sm rounded-2xl max-lg:p-4">
-          <figure>
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7dx7aV_OopoqoXoyIZKtZnm-gwN0eeoxEpg&s"
-              alt="Shoes"
-              className=" w-full rounded-2xl"
-            />
-          </figure>
-          <div className="card-body">
-            <p className="font-sans text-lg skeleton bg-blue-500">
-              The stigma surrounding mental illness often prevents people from
-              seeking help. Society may view mental health struggles as
-              something to be ashamed of, leading to feelings of isolation or
-              fear of judgment. However, it’s essential to foster empathy and
-              understanding to break these barriers. By promoting mental health
-              education and support systems, we can create an environment where
-              those experiencing mental illness feel safe and empowered to seek
-              treatment.
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        style={box}
+      >
+        <div className="bg-black text-white  font-serif  rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb"
+            alt="Support"
+            className="w-full h-96 object-cover"
+          />
+          <div className="p-4 skeleton bg-black">
+            <p>
+              Open conversations reduce stigma and encourage people to seek the
+              help they need. Mental health support is key to thriving in life.
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
+
+      {/* Card 3 */}
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        style={box}
+      >
+        <div className="bg-black md:w-96 md:ml-40 lg:ml-0 lg:w-full text-white  font-serif rounded-xl shadow-lg overflow-hidden">
+          <img
+            
+            src="https://t4.ftcdn.net/jpg/12/47/80/11/240_F_1247801105_0nF04SXP5pBPmzCaQ7a3GIYUs8LMwpIF.jpg"
+            alt="Community"
+            className="w-full h-96 object-cover"
+          />
+          <div className="p-4 skeleton bg-black">
+            <p>
+              Community support and awareness can create safe spaces for
+              individuals to talk about their struggles and feel seen and heard.
+            </p>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 }
