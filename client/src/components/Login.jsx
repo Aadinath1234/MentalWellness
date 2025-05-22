@@ -20,7 +20,7 @@ const Login = () => {
   const isLoading = useSelector((store) => store.app.isLoading);
 
   const loginHandler = async () => {
-    setIsLogin(!isLogin);
+    // setIsLogin(true);
     console.log("Login Clicked !!");
   };
 
@@ -47,7 +47,7 @@ const Login = () => {
           localStorage.setItem("user", JSON.stringify(res.data.user));
           navigate("/HeroCard");
         } else {
-          setIsLogin(true);
+          setIsLogin(false);
         }
       } else {
         throw new Error("Unexpected response format");
@@ -129,7 +129,7 @@ const Login = () => {
             />
           </div>
 
-          <button type="submit" className="btn btn-neutral mt-4">
+          <button onClick={()=>setIsLogin(!isLogin)} type="submit" className="btn btn-neutral mt-4">
             {isLoading ? "Loading..." : isLogin ? "Login" : "Signup"}
           </button>
 
