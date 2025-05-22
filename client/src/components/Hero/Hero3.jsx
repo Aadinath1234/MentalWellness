@@ -22,7 +22,7 @@ const FAQPage = () => {
             </div>
             <div className='faq-item'>
               <h2 className='text-2xl font-semibold'>Who can I contact for additional support?</h2>
-              <p className='text-gray-700'>If you need further assistance, please use the contact form on our Contact Page or email us directly at <a href="mailto:contact@yourdomain.com" className='text-blue-500 hover:underline'>optimus@gmail.com</a>.</p>
+              <p className='text-gray-700'>If you need further assistance, please use the contact form on our Contact Page or email us directly at <a href="mailto:contact@yourdomain.com" className='text-blue-500 hover:underline'>wellness@gmail.com</a>.</p>
             </div>
           </div>
         </div>
