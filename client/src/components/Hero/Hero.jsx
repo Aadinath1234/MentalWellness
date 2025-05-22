@@ -12,10 +12,10 @@ const Hero = () => {
               data-aos="fade-up" className='text-5xl font-bold'
             >
 
-              MIND'SCOOL 
+              M'WELLNESS  
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
-              Mind'Scool  is a non-profit movement empowering the awareness for mental health among the people . It is created to inform the person about his/her mental condition and you can also get a consultancy from a doctor. This is not a site for personal disclosure of suicidal thoughts or behaviours. If you are in crisis, please call 112/911 or go to your nearest emergency department for assistance.
+              M'wellness is a non-profit movement empowering the awareness for mental health among the people . It is created to inform the person about his/her mental condition and you can also get a consultancy from a doctor. This is not a site for personal disclosure of suicidal thoughts or behaviours. If you are in crisis, please call 112/911 or go to your nearest emergency department for assistance.
             </p>
 
             <button data-aos="fade-up" data-aos-delay="500" className='bg-blue-400 text-white hover:bg-blue-500 px-4 py-1 rounded-md duration-200'>
