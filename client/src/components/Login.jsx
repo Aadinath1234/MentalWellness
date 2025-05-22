@@ -1,9 +1,3 @@
-
-
-// Define or import API_END_POINT
-const API_END_POINT = 'https://mentalwellness-backend.onrender.com/api/v1/user'; // Make sure to replace this with your actual API endpoint
-
-
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import axios from "axios";
