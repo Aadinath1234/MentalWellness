@@ -129,14 +129,14 @@ const Login = () => {
             />
           </div>
 
-          <button onClick={()=>setIsLogin(!isLogin)} type="submit" className="btn btn-neutral mt-4">
+          <button type="submit" className="btn btn-neutral mt-4">
             {isLoading ? "Loading..." : isLogin ? "Login" : "Signup"}
           </button>
 
           <p className="text-white mt-2">
             {isLogin ? "New to M'wellness?" : "Already have an account?"}
             <span
-              onClick={loginHandler}
+              onClick={()=>setIsLogin(!isLogin)}
               className="ml-1 text-blue-900 font-medium cursor-pointer"
             >
               {isLogin ? "Signup" : "Login"}
