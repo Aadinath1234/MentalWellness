@@ -10,7 +10,7 @@ import { setUser, setLoading } from "../redux/userSlice.jsx";
 const API_END_POINT = 'https://mentalwellness-backend.onrender.com/api/v1/user'; // Make sure to replace this with your actual API endpoint
 
 const Login = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,7 +20,7 @@ const Login = () => {
   const isLoading = useSelector((store) => store.app.isLoading);
 
   const loginHandler = async () => {
-    setIsLogin(true);
+    setIsLogin(!isLogin);
     console.log("Login Clicked !!");
   };
 
