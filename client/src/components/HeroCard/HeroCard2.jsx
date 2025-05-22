@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import wave from "../../assets/wave Gif.gif";
+import wave from "../../assets/videofront.mp4";
 import Yoga from "../../assets/meditation.jpg";
 // import Exercise from '../../assets/exercise.jpg';
 import Games from "../../assets/games.jpg";
@@ -15,6 +15,11 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import { API_END_POINT } from "../../utils/constant";
 import { IoIosArrowDropdown } from "react-icons/io";
+import * as motion from "motion/react-client";
+
+const box = {
+  borderRadius: 5,
+};
 
 // Service data array containing the details of each service
 const ServiceData = [
@@ -35,7 +40,7 @@ const ServiceData = [
       "Engaging in short, fun games offers a quick mental break and boosts creativity.",
     img: Games,
     aosDelay: "700",
-    link: "https://poki.com/",
+    link: "/Bubble",
   },
   {
     title: "Books and Thoughts",
@@ -59,7 +64,8 @@ const ServiceData = [
     title: "Videos for Relief",
     content: "Watch videos to release stress",
     description: "Discover stress-relief techniques to bring calm and balance.",
-    img: Video,
+
+    img: "https://images.upsplash.com/photo-1506748686214-e9df14d4d9d0",
     aosDelay: "700",
     link: "https://youtube.com/playlist?list=PLWlTX25IDqIz4Ad4_ZvTQ_rM07Lkr7g-4&si=tEy9dzygmcYuXWM0",
   },
@@ -108,39 +114,38 @@ const HeroCard = ({ onCardClick }) => {
             </div>
           </div>
         )}
-       
       </div>
 
       {/* Main content section */}
-      
+
       <div className="container  px-4 sm:px-0 pt-[120px]">
-      <div className="">
-            
-          
-            
-        </div>
-       
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        
-          {ServiceData.map((data, index) => (
-            <Link
-              key={index}
-              to={data.link}
-              onClick={onCardClick}
-              data-aos-delay={data.aosDelay}
-              className="cursor-pointer min-h-[300px] flex flex-col justify-center items-center rounded-xl gap-4 bg-sky-900/70 backdrop-blur-sm text-white text-center text-2xl py-8 px-3 w-full lg:w-[300px] mx-auto"
-            >
-              <img
-                src={data.img}
-                alt={data.title}
-                className="object-cover rounded-md w-full h-[200px] mb-4"
-              />
-              <h1 className="text-2xl font-semibold">{data.title}</h1>
-              <p>{data.content}</p>
-              <p className="text-sm">{data.description}</p>
-            </Link>
-          ))}
-        </div>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
+          style={box}
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {ServiceData.map((data, index) => (
+              <Link
+                key={index}
+                to={data.link}
+                onClick={onCardClick}
+                data-aos-delay={data.aosDelay}
+                className="cursor-pointer min-h-[300px] flex flex-col justify-center items-center rounded-xl gap-4 bg-sky-900/70 backdrop-blur-sm text-white text-center text-2xl py-8 px-3 w-full lg:w-[300px] mx-auto"
+              >
+                <img
+                  src={data.img}
+                  alt={data.title}
+                  className="object-cover rounded-md w-full h-[200px] mb-4"
+                />
+
+                <h1 className="text-2xl font-semibold">{data.title}</h1>
+                <p>{data.content}</p>
+                <p className="text-sm">{data.description}</p>
+              </Link>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Wave Effect */}
         <img
