@@ -19,7 +19,7 @@ function Card() {
             
             src="https://t3.ftcdn.net/jpg/13/37/34/90/240_F_1337349048_AQjGQU7UXMzD6jv3N8QTsRrOqbFdVZAZ.jpg"
             alt="Mental Health"
-            className="w-full h-90 object-cover"
+            className="w-full max-lg:h-90 lg:h-96  object-cover"
           />
 
           <div className="p-4 skeleton bg-black ">
